@@ -43,36 +43,68 @@ videoWraps.forEach((videoWrap) => {
 });
 
 
-// main hero src, title 변경
 
-const videoTitles = document.querySelectorAll('.video-title');
+// main hero src, title 변경 및 자동 전환 기능
+
+const videoTitles = document.querySelectorAll('#main-section .video-title');
 const mainVideo = document.querySelector('.main-video');
 const videoText = document.querySelector('.video-text');
+let currentIndex = 0; 
+const switchInterval = 20000;
 
-videoTitles.forEach(title => {
+// 함수: Lottie 애니메이션 초기화
+function resetLottieAnimations() {
+    const lottiePlayers = document.querySelectorAll('.ring lottie-player');
+    lottiePlayers.forEach(player => {
+        player.stop();
+        player.play(); 
+    });
+}
+
+// 함수: 비디오와 텍스트 변경
+function switchVideo(index) {
+
+    document.querySelectorAll('.ring').forEach(ring => ring.classList.remove('active'));
+
+    const title = videoTitles[index];
+    title.querySelector('.ring').classList.add('active');
+    
+    const newVideoSrc = title.getAttribute('data-video');
+    const newText = title.getAttribute('data-text');
+
+    resetLottieAnimations();
+
+    mainVideo.style.opacity = 0;
+
+    setTimeout(() => {
+        mainVideo.src = newVideoSrc;
+        videoText.innerHTML = newText;
+
+        mainVideo.style.opacity = 1;
+    }, 500); 
+}
+
+// 클릭 이벤트: 수동 변경
+videoTitles.forEach((title, index) => {
     title.addEventListener('click', () => {
-        // 모든 .ring의 active 클래스를 제거
-        document.querySelectorAll('.ring').forEach(ring => ring.classList.remove('active'));
-        // 클릭한 타이틀의 .ring에 active 클래스 추가
-        title.querySelector('.ring').classList.add('active');
-        
-        // data-video 속성에서 새 비디오 src 가져오기
-        const newVideoSrc = title.getAttribute('data-video');
-        const newText = title.getAttribute('data-text');
+        currentIndex = index;
+        switchVideo(currentIndex);
 
-        // 페이드 아웃
-        mainVideo.style.opacity = 0;
-
-        // 일정 시간 후에 비디오와 텍스트를 변경하고 다시 페이드 인
-        setTimeout(() => {
-            mainVideo.src = newVideoSrc;
-            videoText.innerHTML = newText;
-            
-            // 페이드 인
-            mainVideo.style.opacity = 1;
-        }, 500); // CSS의 transition과 같은 시간으로 설정 (0.5초)
+        resetAutoSwitch();
     });
 });
 
+// 자동 전환 타이머 설정
+let autoSwitch = setInterval(() => {
+    currentIndex = (currentIndex + 1) % videoTitles.length; 
+    switchVideo(currentIndex);
+}, switchInterval);
 
-
+// 타이머 리셋 함수
+function resetAutoSwitch() {
+    clearInterval(autoSwitch); 
+    autoSwitch = setInterval(() => {
+        currentIndex = (currentIndex + 1) % videoTitles.length; 
+        switchVideo(currentIndex);
+    }, switchInterval);
+}

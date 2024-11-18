@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Domingo</title>
+
+    <!-- Favicon Link -->
+     <link rel="shortcut icon" href="./images/favicon.png">
+     <link rel="apple-touch-icon" href="./images/favicon.png">
+
+    <!-- remixicon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+
+    <!-- Main Stylesheet link -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/work.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- Web Font cdn -->
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/hjr7xct.css">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <div class="container"> 
+                <div class="logo">
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul class="nav-lists">
+                        <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                        <li class="contact">CONTACT</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- work main section -->
+
+        <section id="work-main-section">
+            <div class="work-main-wrap container">
+                <div class="work-main-title">
+                    <div class="title-top">
+                        <span>MEET </span><span class="scotch"> (</span><span class="italic"> our </span><span class="scotch">)</span>
+                    </div>
+                    <span>PORTFOLIO</span>
+                </div>
+                <div class="work-main-video">
+                    <div class="main-video-wrap">
+                        <div class="text">
+                            <p>ENRICHING CULTURAL AND ARTISTIC EXPERIENCES<br>THROUGH VISUAL STORYTELLING</p>
+                            <p>우리는 문화, 예술, 환경을 하나로 엮어내며,<br>시각적 내러티브를 통해 의미 있는 경험을 선사합니다.</p>
+                        </div>
+                        <video autoplay loop muted  src="./images/hero.mp4"></video>
+                    </div>
+                    <a href="https://youtu.be/KU1ajjJLJm4?si=AlWsY360hsWZ6A-2" target="_blank">
+                        <span>Watch Team Domingo’s Showreel on Youtube</span>
+                        <i class="ri-arrow-up-s-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        
+        <section id="portfolio-section" class="container">
+            <div class="cate-wrap">
+                <div class="work-cate">
+                    <div class="cate-box active" data-category="all">전체 (48)</div>
+                    <div class="cate-box" data-category="culture">문화 예술 (18)</div>
+                    <div class="cate-box" data-category="environment">환경 운동 (20)</div>
+                    <div class="cate-box" data-category="other">기타 (4)</div>
+                </div>
+                <div class="list-style">
+                    <i class="ri-layout-grid-fill"></i>
+                    <i class="ri-menu-line active"></i>
+                </div>
+            </div>
+
+            <div class="work-video-wrap">
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/art-video-1.png" alt="" class="hover-video">
+                            <source src="./images/1.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>이응노 | 군상, 구성, 동방견문록</span>
+                            <p>이응노의 대표작을 3D 애니메이션으로 재해석하여 그의 작품 세계와 인간에<br>대한 탐구를 시각적, 음악적 요소와 함께 생동감 있게 표현했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>이응노 미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/art-video-2.png" alt="" class="hover-video">
+                            <source src="./images/2.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>백남준 | 백남준 효과</span>
+                            <p>백남준과 그의 오마주 작업들을 깊이 있게 소개하고,<br>큐레이터 언어를 쉽게 풀어내어 연출했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/art-video-3.png" alt="" class="hover-video">
+                            <source src="./images/3.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>생의 찬미 | 한국의 채색화 특별전</span>
+                            <p>주제 의식에 맞춰 음악과 초반 모션을 조율하고, 전시의 리듬감을 담아내어<br>전시 브랜딩과 일관성 있는 그래픽과 조화를 이루는 데 중점을 두었습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-4.png" alt="" class="hover-video">
+                            <source src="./images/4.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>작은 방주 | 현대차 시리즈</span>
+                            <p>자연스러운 인터뷰, 다양한 촬영 기법, 소리 간섭 최소화 편집을 통해<br>작품의 디테일과 전시장의 분위기를 효과적으로 전달했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-5.png" alt="" class="hover-video">
+                            <source src="./images/5.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>이중섭 | 이건희 컬렉션 특별전</span>
+                            <p>자연스러운 인터뷰, 다양한 촬영 기법, 소리 간섭 최소화 편집을 통해<br>작품의 디테일과 전시장의 분위기를 효과적으로 전달했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="environment">
+                    <div class="video-box">
+                        <video muted poster="./images/work-6.png" alt="" class="hover-video">
+                            <source src="./images/6.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>GO WITH GREENERS</span>
+                            <p>환경운동가가 만든 친환경 브랜드 캠페인의 메시지와 정체성을<br>인터뷰와 일러스트를 통해 시각적으로 담아냈습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>환경,</span>
+                            <p>한화솔루션 케미칼</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-7.png" alt="" class="hover-video">
+                            <source src="./images/7.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>모네와 피카소, 파리의 아름다운 순간들 | 이건희 컬렉션 특별전</span>
+                            <p>다양한 촬영 기법, 소리 간섭 최소화 편집을 통해<br>작품의 디테일과 전시장의 분위기를 효과적으로 전달했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="environment">
+                    <div class="video-box">
+                        <video muted poster="./images/work-8.png" alt="" class="hover-video">
+                            <source src="./images/8.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>고스트넷, 바다의 그물을 건져 올리다.</span>
+                            <p>죽음의 바다를, 생명의 바다로.<br>바다에서 건져 올린 상업어업의 진실을 조명하는 다큐멘터리 필름입니다..</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>환경,</span>
+                            <p>Sea Shepherd Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-9.png" alt="" class="hover-video">
+                            <source src="./images/9.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>데이터의 바다 | 히토 슈타이얼 특별전</span>
+                            <p>인간이 마주한 재난과 전쟁을 배경으로 기술, 인간, 이미지, 예술을 둘러싼<br>사유와 성찰을 담은 작품들을 소개합니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="environment">
+                    <div class="video-box">
+                        <video muted poster="./images/work-10.png" alt="" class="hover-video">
+                            <source src="./images/10.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>우리가 살던 고향은</span>
+                            <p>어르신들의 구술로 전해진 생태 지식을 담은 '우리의 살던 고향은' 책의 내용을<br>시각적으로 표현하여 몰입감을 높여주는 방식으로 편집했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>환경,</span>
+                            <p>(재)생명다양성재단</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="environment">
+                    <div class="video-box">
+                        <video muted poster="./images/work-11.png" alt="" class="hover-video">
+                            <source src="./images/11.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>GUARDIANS OF NATURE</span>
+                            <p>시민이 기후위기에 대응해 실천할 수 있는 방법을 주제로 서울환경연합과 함께<br>총 7편의 온라인 강의 시리즈로 제작되었습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>환경,</span>
+                            <p>서울환경연합</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-12.png" alt="" class="hover-video">
+                            <source src="./images/12.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>인천국제공항 전통문화 미디어</span>
+                            <p>투명 미디어 LED를 활용한 3D 애니메이션으로 전통문화의 아름다움을 생동감 있게 표현했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>인천국제공항, 한국문화재단</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap" data-category="culture">
+                    <div class="video-box">
+                        <video muted poster="./images/work-13.png" alt="" class="hover-video">
+                            <source src="./images/13.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>미술로, 세계로 | 국제 미술 소장품 기획전</span>
+                            <p>다양한 촬영 기법, 소리 간섭 최소화 편집을 통해<br>작품의 디테일과 전시장의 분위기를 효과적으로 전달했습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>문화 예술,</span>
+                            <p>국립현대미술관</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-wrap last" data-category="environment">
+                    <div class="video-box">
+                        <video muted poster="./images/work-14.png" alt="" class="hover-video">
+                            <source src="./images/14.mp4">
+                        </video>
+                        <div class="play-overlay">PLAY</div>
+                    </div>
+                    <div class="video-text">
+                        <div class="video-title">
+                            <span>생명다양성재단의 발자국 | 10주년 기념 행사 다큐멘터리</span>
+                            <p>지난 프로젝트들을 되돌아보며 후원자들과 함께 풍요와 안녕을 기원하는<br>복주머니를 나누는 따뜻하고 소중한 시간을 담고 있습니다.</p>
+                        </div>
+                        <div class="video-cate">
+                            <span>환경,</span>
+                            <p>(재)생명다양성재단</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+
+       
+
+         <!-- Footer section -->
+         <footer id="footer">
+            <h3>CONTACT US</h3>
+            <div class="footer-section container">
+                <div class="contact-section">
+                    <h5>우리와 함께 멋진 작품을 만들어봐요.</h5>
+                    <form action="" class="contact-box">
+                        <div class="form-align">
+                            <div class="input-box">
+                                <label for="company">회사명</label>
+                                <input type="text" id="company" name="company" required placeholder="company name">
+
+                            </div>
+                            <div class="input-box">
+                                <label for="name">이름</label>
+                                <input type="text" id="name" name="name" required placeholder="name">
+                            </div>
+                        </div>
+                        <div class="form-align">
+                            <div class="input-box">
+                                <label for="email">이메일</label>
+                                <input type="email" id="email" name="email" required placeholder="e-mail">
+
+                            </div>
+                            <div class="input-box">
+                                <label for="phone">연락처</label>
+                                <input type="number" id="phone" name="phone" required placeholder="phone number">
+                            </div>
+                        </div>
+                        <div class="message-box">
+                            <label for="message">메세지</label>
+                            <textarea name="message" id="message" placeholder="프로젝트에 대해 알려주세요." required></textarea>
+                        </div>
+
+                        <div class="send-btn">
+                            <button type="submit">Send</button>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="company-info">
+                    <div class="info-box">
+                        <span>address</span>
+                        <p>서울 마포구 와우산로 170 2층</p>
+                    </div>
+                    <div class="info-box">
+                        <span>support</span>
+                        <p>domingo@teamdomingo.co.kr</p>
+                        <p>T. 02-333-5133</p>
+                        <p>F. 02-6455-2900</p>
+                    </div>
+                    <div class="info-box">
+                        <span>ceo</span>
+                        <p>김도형</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sns-wrap container">
+                <div class="sns">
+                    <a href="https://www.instagram.com/team.dmng?igsh=MWlvMG5ndnVtN2drbg==" target="_blank">
+                        <span><i class="ri-instagram-fill"></i> instagram</span>
+                    </a>
+                    <a href="https://www.youtube.com/@teamdomingo1639" target="_blank">
+                        <span><i class="ri-youtube-fill"></i>youtube</span>
+                    </a>
+                    
+                </div>
+                <div>©team domingo</div>
+            </div>
+         </footer>
+
+    </div>
+
+    <!-- javascript -->
+     <script src="./js/custom.js"></script>
+     <script src="./js/cate.js"></script>
+</body>
+</html>

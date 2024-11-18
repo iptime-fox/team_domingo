@@ -13,12 +13,12 @@
 /* work main section css */
 #work-main-section .work-main-wrap{width: 100%; height: 100%; padding: 120px 2.5rem 40px;}
 #work-main-section .work-main-wrap .work-main-title .title-top{display: flex; align-items: center;  column-gap: 11px;}
-#work-main-section .work-main-wrap .work-main-title span{font-size: 150px; font-weight: 300; line-height: 1;}
+#work-main-section .work-main-wrap .work-main-title span{font-size: 120px; font-weight: 300; line-height: 1;}
 #work-main-section .work-main-wrap .work-main-title .scotch, #work-main-section .work-main-wrap .work-main-title .italic{font-size: 60px; text-align: center;}
 
 #work-main-section .work-main-wrap .work-main-video{width: 100%; padding-top: 160px; display: flex; flex-direction: column; align-items: end;}
 #work-main-section .work-main-wrap .work-main-video .main-video-wrap{display: flex;}
-#work-main-section .work-main-wrap .work-main-video .main-video-wrap .text{text-align: end; padding-right: 8px; font-size: 20px; color: #4d4d4d;}
+#work-main-section .work-main-wrap .work-main-video .main-video-wrap .text{text-align: end; padding-right: 24px; font-size: 20px; color: #4d4d4d;}
 #work-main-section .work-main-wrap .work-main-video video{width: 908px; padding-bottom: 20px;}
 #work-main-section .work-main-wrap .work-main-video span, #work-main-section .work-main-wrap .work-main-video i{color: #4d4d4d;}
 

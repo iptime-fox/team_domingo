@@ -1,0 +1,132 @@
+/* main page reponsive css */
+
+@media screen and (max-width: 768px) {
+
+    .container{padding: 0 20px; width: 100%;}
+
+    /* header style */
+
+    header .container{padding: .5rem 20px;}
+
+
+    /* Hero section CSS */
+
+    #main-section{height: 900px;}
+    #main-section .landing-text-box .video-text span{font-size: 24px;}
+    #main-section .video-desc .video-title .video-name, #main-section .video-desc .story{display: none;}
+    /* .play-overlay { position: fixed; bottom: 40px; right: 40px; width: auto; padding: 10px 20px; } */
+    #main-section .landing-text-box{padding-bottom: 32px;}
+
+
+
+    /* Meet section CSS */
+    #meet-section{padding: 160px 20px;}
+    #meet-section .meet-section-top span{font-size: 24px;}
+    #meet-section img{padding: 32px 0; width: 100%;}
+    #meet-section .meet-section-bottom p{font-size: 16px;}
+
+
+
+    /* Art section CSS */
+    #art-section .section-title{margin: 0 20px; padding-top: 16px;}
+    #art-section .section-title span{font-size: 24px;}
+    #art-section .section-title a p{font-size: 14px;}
+    #art-section .art-main-wrap{margin: 20px 0;}
+
+    #art-section .art-title{padding: 0 20px 32px;}
+    #art-section .art-title span{font-size: 80px; line-height: 1; margin-bottom: 20px;}
+    #art-section .art-title p{font-size: 16px;}
+   
+
+
+    /* video css */
+    .video-wrap{flex-direction: column;}
+    .video-wrap .video-box{width: 100%; height: 100%; _object-fit: contain;}
+    .video-wrap .video-text{flex-direction: column; width: 100%;}
+    .video-wrap .video-text .video-title{display: flex; flex-direction: column;}
+    .video-wrap .video-text .video-title span{font-size: 20px; padding-top: 16px;}
+    .video-wrap .video-text .video-title p{font-size: 16px;}
+    .video-wrap .video-text .video-cate{justify-content: end;}
+
+
+
+    /* Mind section CSS */
+
+    #mind-section{padding: 160px 20px;}
+    #mind-section .mind-section-top span{font-size: 24px;}
+    #mind-section video{padding: 24px 0; width: 320px;}
+    #mind-section .mind-section-bottom p{font-size: 16px;}
+
+
+
+    /* Environment section CSS */
+    #environment-section .section-title span{font-size: 24px;}
+    #environment-section .section-title{margin: 0 20px; padding-top: 16px;}
+    #environment-section .section-title a p{font-size: 14px;}
+
+    #environment-section .art-main-wrap{margin: 20px 0;}
+    #environment-section .art-title{padding: 0 20px 32px;}
+    #environment-section .art-title span{font-size: 80px; line-height: 1; margin-bottom: 20px;}
+    #environment-section .art-title p{font-size: 16px;}
+
+
+
+
+
+    /* voice section CSS */
+    #voice-section{padding: 160px 20px;}
+    #voice-section .voice-section-top{padding-bottom: 16px;}
+    #voice-section .voice-section-top span{font-size: 24px;}
+    #voice-section .voice-section-bottom p{font-size: 16px;}
+    #voice-section .voice-img-wrap{padding: 60px 0 0; column-gap: 20px;}
+    #voice-section .voice-img-wrap .voice-img{width: 50%;}
+    #voice-section .voice-img-wrap img{width: 100%;}
+    #voice-section .voice-img-wrap .voice-line{display: none;}
+
+    #voice-section .voice-img-wrap .voice-img .voice-text h4{font-size: 24px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 14px;padding: 16px 0;}
+    #voice-section .voice-img-wrap .voice-img .voice-text{bottom: 20px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 14px;}
+
+
+
+
+    /* Partners section css */
+    #partners-section .section-title{margin: 0 20px; padding-top: 16px;}
+    #partners-section .section-title span{font-size: 24px;}
+    #partners-section .section-title p{font-size: 14px; padding-top: 20px;}
+    #partners-section .partners-logo{padding: 120px 0 300px;}
+    #partners-section .partners-logo img{height: 140px;}
+
+
+
+    /* Ongoing section css */
+
+    #ongoing-section .section-title{margin: 0 20px; padding-top: 16px;}
+    #ongoing-section .section-title span{font-size: 24px;}
+
+
+
+    /* Footer section */
+    footer{height: 100%;}
+    footer h3{font-size: 60px; padding: 0 20px 80px;}
+    footer .footer-section{flex-direction: column;}
+    footer .footer-section .contact-section{ width: 100%; padding: 0 0 120px ; row-gap: 20px;}
+    footer .footer-section .contact-section h5{font-size: 16px;}
+    footer form{row-gap: 20px; font-size: 14px;}
+    footer form .form-align{column-gap: 20px;}
+    footer form .send-btn button{width: 100%;}
+    footer .company-info{padding-left: 0; row-gap: 40px;}
+    footer .company-info span{font-size: 17px;}
+    footer .company-info p{font-size: 14px; padding-top: 12px;}
+    footer .sns-wrap{padding: 80px 20px 20px; justify-content: space-between; font-size: 17px;}
+
+
+
+
+
+
+
+
+
+}
