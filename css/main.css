@@ -8,7 +8,7 @@
 
 /* header style */
 #header{position:fixed; width:100%; height:auto; z-index:20; transition:all .3s;}
-#header.active{background:#ffffff; }
+#header.active{background:#fbfbfb; }
 
 header .container{display: flex; justify-content: space-between; width: 100%; padding: .5rem 2.5rem;}
 
@@ -86,12 +86,12 @@ header nav ul li:hover{background-color: #FF00FF; }
 .video-wrap.last { border-bottom: 1px solid #808080; } 
 .video-wrap .video-box { width: 753px; height: 440px; position: relative; } 
 .video-wrap .video-box video { width: 100%; height: 100%; object-fit: contain; } 
-.video-wrap .video-text { width: calc(100% - 800px); display: flex; justify-content: space-between; } 
+.video-wrap .video-text { width: calc(100% - 800px); display: flex; justify-content: space-between;  flex-direction: column;} 
 .video-wrap .video-text .video-title span { font-size: 32px; } 
 .video-wrap .video-text .video-title p { font-size: 24px; padding-top: 12px; color: #4D4D4D; } 
-.video-wrap .video-text .video-cate { display: flex; column-gap: 5px; color: #4D4D4D; align-items: end; } 
+.video-wrap .video-text .video-cate { width: 100%; display: flex; column-gap: 5px; color: #4D4D4D; justify-content: end; } 
 .video-wrap:hover .play-overlay { opacity: 1; } 
-.play-overlay { position: absolute; bottom: 20px; right: 20px; background-color: #191919; color: #fbfbfb; padding: 2px 8px; border-radius: 5px; opacity: 0; transition: opacity 0.3s ease;  z-index: 10; pointer-events: none;}
+.play-overlay { position: absolute; bottom: 20px; right: 20px; background-color: #191919; color: #fbfbfb; padding: 2px 8px; border-radius: 5px; opacity: 0; transition: opacity 0.3s ease;  z-index: 10; pointer-events: none; transition: all 0.3s;}
 
 
 

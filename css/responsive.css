@@ -11,11 +11,12 @@
 
     /* Hero section CSS */
 
-    #main-section{height: 900px;}
+    #main-section{height: 900px; position:relative; overflow:hidden; }
     #main-section .landing-text-box .video-text span{font-size: 24px;}
     #main-section .video-desc .video-title .video-name, #main-section .video-desc .story{display: none;}
-    /* .play-overlay { position: fixed; bottom: 40px; right: 40px; width: auto; padding: 10px 20px; } */
     #main-section .landing-text-box{padding-bottom: 32px;}
+    #main-section .video-title .ring {position: absolute; bottom: 32px; right: 20px; width: 24px; height: 25px; z-index: 10;}
+    #main-section .video-desc .video-title .ring lottie-player{width: 24px; height: 24px;}
 
 
 
@@ -41,12 +42,12 @@
 
     /* video css */
     .video-wrap{flex-direction: column;}
-    .video-wrap .video-box{width: 100%; height: 100%; _object-fit: contain;}
-    .video-wrap .video-text{flex-direction: column; width: 100%;}
+    .video-wrap .video-box{width: 100%; aspect-ratio: 16 / 9; height: auto;  overflow: hidden; display: flex; justify-content: center; align-items: center;}
+    .video-wrap .video-box video { width: 100%; height: 100%; object-fit: cover; transition: none; } 
+    .video-wrap .video-text{width: 100%;}
     .video-wrap .video-text .video-title{display: flex; flex-direction: column;}
     .video-wrap .video-text .video-title span{font-size: 20px; padding-top: 16px;}
     .video-wrap .video-text .video-title p{font-size: 16px;}
-    .video-wrap .video-text .video-cate{justify-content: end;}
 
 
 

@@ -46,7 +46,7 @@
 .video-wrap.grid-view .video-box video {width: 100%; height: 100%; object-fit: cover;} 
 
 
-.video-wrap.grid-view .video-text { height:calc(100% - 20px); position: absolute; top: 0; left: 0;  width: 100%; background: rgba(119, 119, 119, 0.274); color: #fbfbfb; padding: 20px; box-sizing: border-box; z-index: 1; opacity:0;display: flex; align-items: end;}
+.video-wrap.grid-view .video-text { height:calc(100% - 20px); flex-direction: row; position: absolute; top: 0; left: 0;  width: 100%; background: rgba(119, 119, 119, 0.274); color: #fbfbfb; padding: 20px; box-sizing: border-box; z-index: 1; opacity:0;display: flex; align-items: end; transition: all 0.3s;}
 .video-wrap.grid-view .video-text .video-title p {color:#fbfbfb;}
 .video-wrap.grid-view .video-title { margin-bottom: 10px; }
 .video-wrap.grid-view .video-cate{display: none;}
