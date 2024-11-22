@@ -49,8 +49,8 @@ header nav ul li:hover{background-color: #FF00FF; }
 #main-section .landing-text-box .video-text span{font-size: 32px; color: #DADADA;}
 #main-section .landing-text-box .video-text span.span-bold{color: #fbfbfb;}
 
-#main-section .video-desc{width: fit-content; display: flex; flex-direction: column; row-gap: 32px;}
-#main-section .video-desc .video-title-wrap{width: 100%; display: flex; flex-direction: column; row-gap: 14px;}
+#main-section .video-desc{width: fit-content; display: flex; flex-direction: column; row-gap: 28px;}
+#main-section .video-desc .video-title-wrap{width: 100%; display: flex; flex-direction: column; row-gap: 5px;}
 #main-section .video-desc .video-title{cursor: pointer; box-sizing: content-box; display: flex; width: 100%; column-gap: 10px; color: #DADADA;}
 #main-section .video-desc .video-title:hover{color: #FF00FF; transition:all .3s;}
 
@@ -59,16 +59,14 @@ header nav ul li:hover{background-color: #FF00FF; }
 #main-section .video-desc .video-title .ring lottie-player{width: 14px; height: 14px; visibility: hidden; opacity: 0;}
 #main-section .video-desc .ring.active lottie-player{visibility: visible; opacity: 1;}
 #main-section .video-desc .video-title .span{margin-left: 16px;}
-#main-section .video-desc .story{padding-left: 22px; color: #fbfbfb;}
+#main-section .video-desc .story{padding-left: 22px; color: #fbfbfb; font-size: 14px;}
 
 
 #main-section .video-desc .video-title .video-name{width: 100%; display: flex;}
-#main-section .video-desc .video-title .video-name span{width: 300px;}
-#main-section .video-desc .video-title .video-name .art-name{width: 210px;}
+#main-section .video-desc .video-title .video-name .art-name{width: 188px;}
+#main-section .video-desc .video-title .video-name span{font-size: 14px;}
 
-.video-title .ring.active + .video-name {
-    color: #fbfbfb; /* 활성화된 글자색 (예: 주황색) */
-}
+.video-title .ring.active + .video-name {color: #fbfbfb; }
 
 /* Meet section CSS */
 #meet-section{display: flex; flex-direction: column; align-items: center; justify-content: center;width: 100%; padding: 200px 0; _height: 100vh;}

@@ -11,6 +11,10 @@
     #meet-section .meet-section-top span{font-size: 32px;}
     #meet-section .meet-section-bottom p{font-size: 20px;}
 
+    #main-section .video-desc{row-gap: 24px;}
+    #main-section .video-desc .video-title-wrap{row-gap: 3px;}
+    #main-section .video-desc .video-title .video-name .art-name{width: 184;}
+
 
     /* Art section CSS */
     #art-section .section-title span{font-size: 32px;}
@@ -302,6 +306,7 @@
 
 
     /* Meet section CSS */
+    #meet-section{padding: 120px 0;}
     #meet-section .meet-section-top span{font-size: 20px;}
     #meet-section img{width: 328px;}
     #meet-section .meet-section-bottom p{font-size: 12px;}
@@ -324,6 +329,7 @@
 
 
     /* Mind section CSS */
+    #mind-section{padding: 120px 20px;}
     #mind-section .mind-section-top span{font-size: 20px;}
     #mind-section .mind-section-bottom p{font-size: 12px;}
     #mind-section video{width: 320px;}
