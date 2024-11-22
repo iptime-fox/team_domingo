@@ -5,7 +5,7 @@ function changeImageSrc() {
     for (var i = 0; i < imgs.length; i++) {
         var currentSrc = imgs[i].src; // 현재 src 가져오기
 
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 900) {
             // "-2"가 없는 경우에만 추가
             if (!currentSrc.includes('-2')) {
                 imgs[i].src = currentSrc.replace(/(\.\w+)$/, '-2$1'); // 파일 확장자 앞에 "-2" 추가

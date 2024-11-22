@@ -1,18 +1,42 @@
 // Header css 바뀌는 javascript code
 
+
 const header = document.querySelector('#header');
+const hamburger = document.getElementById('hamburger');
+const nav = document.querySelector('nav');
+
+let isHamburgerOpen = false;
 
 const stickyHeader = () => {
     const scry = window.scrollY;
-    const triggerHeight = window.innerHeight ; // 예: 화면 높이의 1.5배에 해당하는 px
-    if (scry > triggerHeight) {
-        header.classList.add('active');
-    } else {
-        header.classList.remove('active');
+    const triggerHeight = window.innerHeight;
+
+    if (!isHamburgerOpen) {
+        if (scry > triggerHeight) {
+            header.classList.add('active');
+        } else {
+            header.classList.remove('active');
+        }
     }
 };
 
+// 햄버거 버튼 클릭 이벤트
+hamburger.addEventListener('click', () => {
+    isHamburgerOpen = !isHamburgerOpen; 
+    nav.classList.toggle('active'); 
+    hamburger.classList.toggle('open'); 
+
+    if (isHamburgerOpen) {
+        header.classList.add('active');
+    } else {
+        stickyHeader();
+    }
+});
+
+
 window.addEventListener('scroll', stickyHeader);
+
+
 
 
 // contact 버튼 누르면 page 맨 아래로 이동

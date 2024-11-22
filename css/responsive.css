@@ -1,8 +1,89 @@
 /* main page reponsive css */
 
-@media screen and (max-width: 768px) {
 
-    .container{padding: 0 20px; width: 100%;}
+
+@media screen and (max-width: 1571px){
+
+    /* Hero section CSS */
+    #main-section .landing-text-box .video-text span{font-size: 28px;}
+
+    /* Meet section CSS */
+    #meet-section .meet-section-top span{font-size: 32px;}
+    #meet-section .meet-section-bottom p{font-size: 20px;}
+
+
+    /* Art section CSS */
+    #art-section .section-title span{font-size: 32px;}
+    #art-section .section-title a p{font-size: 14px;}
+
+    #art-section .art-title span{font-size: 120px; line-height: 1; }
+    #art-section .art-title p{font-size: 20px;}
+
+
+    /* video css */
+    .video-wrap .video-box{width: 607px; _height: 354px;}
+    .video-wrap .video-text{ width: 60%;}
+    .video-wrap .video-text .video-title span{font-size: 24px;}
+    .video-wrap .video-text .video-title p{font-size: 20px;}
+    .video-wrap .video-text .video-cate{font-size: 14px;}
+
+    
+    /* Mind section CSS */
+    
+    #mind-section .mind-section-top span{font-size: 28px;}
+    #mind-section .mind-section-bottom p{font-size: 20px;}
+
+
+    /* Environment section CSS */
+    #environment-section .section-title span{font-size: 32px;}
+    #environment-section .section-title a p{font-size: 14px;}
+    #environment-section .art-title span{font-size: 120px; line-height: 1; }
+    #environment-section .art-title p{font-size: 20px;}
+
+
+    /* voice section CSS */
+    #voice-section .voice-section-top span{font-size: 32px;}
+    #voice-section .voice-section-bottom p{font-size: 16px;}
+    #voice-section .voice-img-wrap{padding: 40px 0 0 ; display: flex; justify-content: center;}
+    #voice-section .voice-img-wrap .voice-img{width: 45%;}
+    #voice-section .voice-img-wrap img{width: 100%;}
+    #voice-section .voice-img-wrap .voice-line{height: auto; }
+
+    #voice-section .voice-img-wrap .voice-img .voice-text h4{font-size: 24px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 14px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 16px;}
+
+
+
+    /* Partners section css */
+    #partners-section .section-title{padding-top: 20px;}
+    #partners-section .section-title span{font-size: 32px;}
+    #partners-section .section-title p{font-size: 16px; padding-top: 20px;}
+
+
+    /* Ongoing section css */
+    #ongoing-section .section-title{ padding-top: 20px;}
+    #ongoing-section .ongoing-project-box .ongoing-box img{padding-bottom: 12px;}
+    #ongoing-section .ongoing-project-box .ongoing-box h4{font-size: 28px;}
+    #ongoing-section .ongoing-project-box .ongoing-box{row-gap: 28px;}
+
+    
+    /* Footer section */
+    footer{height: 100%;}
+    footer h3{font-size: 120px;  padding: 40px 2.5rem ;}
+    footer .footer-section{flex-direction: column; row-gap: 200px; align-items: end;}
+    footer .company-info{width: 65%;  padding-left: 100px; }
+    footer .footer-section .contact-section{max-width: none; width: 65%;}
+    footer .sns-wrap{padding: 140px 40px 40px 0;}
+    footer .sns-wrap .sns{width: 45%;}
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+
+
 
     /* header style */
 
@@ -12,18 +93,90 @@
     /* Hero section CSS */
 
     #main-section{height: 900px; position:relative; overflow:hidden; }
-    #main-section .landing-text-box .video-text span{font-size: 24px;}
     #main-section .video-desc .video-title .video-name, #main-section .video-desc .story{display: none;}
-    #main-section .landing-text-box{padding-bottom: 32px;}
+    #main-section .landing-text-box{padding: 0 20px 32px;}
     #main-section .video-title .ring {position: absolute; bottom: 32px; right: 20px; width: 24px; height: 25px; z-index: 10;}
     #main-section .video-desc .video-title .ring lottie-player{width: 24px; height: 24px;}
 
 
+    /* Meet section CSS */
+    #meet-section{padding: 160px 0;}
+
+
+    /* Art section CSS */
+    #art-section .art-main-wrap {max-height: 600px;}
+    #art-section .art-title{padding-bottom: 40px;}
+    #art-section .art-title span{font-size: 80px; margin-bottom: 20px;}
+
+
+   /* video css */
+   .video-wrap .video-box{width: 50%; }
+   .video-wrap .video-text{ width: 50%;}
+   .video-wrap .video-text .video-title span { font-size: 20px; }
+   .video-wrap .video-text .video-title p { font-size: 16px; }
+   .video-wrap .video-text .video-cate{font-size: 12px;}
+   .video-wrap:hover .play-overlay{font-size: 14px;}
+
+
+
+    /* Mind section CSS */
+    #mind-section{padding: 160px 0;}
+    #mind-section video{width: 614px;}
+
+
+
+    /* Environment section CSS */
+    #environment-section .art-title span{font-size: 80px; }
+    #environment-section .art-title p{font-size: 20px;}
+
+    
+    
+    /* voice section CSS */
+    #voice-section{padding: 160px 0;}
+    #voice-section .voice-section-top span{font-size: 24px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 14px; padding: 20px 0;}
+    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 12px;}
+
+
+    /* Partners section css */
+    #partners-section .partners-logo{padding: 100px 0 300px;}
+
+
+    /* Ongoing section css */
+    #ongoing-section{padding-bottom: 160px;}
+    #ongoing-section .ongoing-project-box{margin-top: 100px;}
+    #ongoing-section .ongoing-project-box .ongoing-box img{width: 140px;}
+    #ongoing-section .ongoing-project-box .ongoing-box h4{font-size: 20px;}
+    #ongoing-section .ongoing-project-box .ongoing-box span{font-size: 12px;}
+    #ongoing-section .ongoing-project-box .ongoing-box p{font-size: 16px;}
+    #ongoing-section .ongoing-project-box .ongoing-box{row-gap: 20px;}
+
+
+    
+    /* Footer section */
+    footer h3{font-size: 80px;}
+    footer .company-info{width: 85%;  }
+    footer .footer-section .contact-section{width: 85%;}
+    footer .sns-wrap .sns{width: 60%;}
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .container{padding: 0 20px; width: 100%;}
+
+
+    /* Hero section CSS */
+
+    #main-section .landing-text-box .video-text span{font-size: 24px;}
+
+
 
     /* Meet section CSS */
-    #meet-section{padding: 160px 20px;}
     #meet-section .meet-section-top span{font-size: 24px;}
-    #meet-section img{padding: 32px 0; width: 100%;}
+    #meet-section img{padding: 32px 0; width: 568px;}
     #meet-section .meet-section-bottom p{font-size: 16px;}
 
 
@@ -31,7 +184,6 @@
     /* Art section CSS */
     #art-section .section-title{margin: 0 20px; padding-top: 16px;}
     #art-section .section-title span{font-size: 24px;}
-    #art-section .section-title a p{font-size: 14px;}
     #art-section .art-main-wrap{margin: 20px 0;}
 
     #art-section .art-title{padding: 0 20px 32px;}
@@ -44,10 +196,9 @@
     .video-wrap{flex-direction: column;}
     .video-wrap .video-box{width: 100%; aspect-ratio: 16 / 9; height: auto;  overflow: hidden; display: flex; justify-content: center; align-items: center;}
     .video-wrap .video-box video { width: 100%; height: 100%; object-fit: cover; transition: none; } 
-    .video-wrap .video-text{width: 100%;}
+    .video-wrap .video-text{width: 100%; row-gap: 80px;}
     .video-wrap .video-text .video-title{display: flex; flex-direction: column;}
-    .video-wrap .video-text .video-title span{font-size: 20px; padding-top: 16px;}
-    .video-wrap .video-text .video-title p{font-size: 16px;}
+    .video-wrap .video-text .video-title span{padding-top: 16px;}
 
 
 
@@ -55,7 +206,7 @@
 
     #mind-section{padding: 160px 20px;}
     #mind-section .mind-section-top span{font-size: 24px;}
-    #mind-section video{padding: 24px 0; width: 320px;}
+    #mind-section video{padding: 24px 0; width: 500px;}
     #mind-section .mind-section-bottom p{font-size: 16px;}
 
 
@@ -63,8 +214,7 @@
     /* Environment section CSS */
     #environment-section .section-title span{font-size: 24px;}
     #environment-section .section-title{margin: 0 20px; padding-top: 16px;}
-    #environment-section .section-title a p{font-size: 14px;}
-
+    
     #environment-section .art-main-wrap{margin: 20px 0;}
     #environment-section .art-title{padding: 0 20px 32px;}
     #environment-section .art-title span{font-size: 80px; line-height: 1; margin-bottom: 20px;}
@@ -78,26 +228,22 @@
     #voice-section{padding: 160px 20px;}
     #voice-section .voice-section-top{padding-bottom: 16px;}
     #voice-section .voice-section-top span{font-size: 24px;}
-    #voice-section .voice-section-bottom p{font-size: 16px;}
-    #voice-section .voice-img-wrap{padding: 60px 0 0; column-gap: 20px;}
     #voice-section .voice-img-wrap .voice-img{width: 50%;}
     #voice-section .voice-img-wrap img{width: 100%;}
-    #voice-section .voice-img-wrap .voice-line{display: none;}
-
-    #voice-section .voice-img-wrap .voice-img .voice-text h4{font-size: 24px;}
-    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 14px;padding: 16px 0;}
+    #voice-section .voice-img-wrap .voice-line{margin: 0 16px;}
+    
+    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 12px;padding: 16px 0;}
     #voice-section .voice-img-wrap .voice-img .voice-text{bottom: 20px;}
-    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 14px;}
-
+    #voice-section .voice-img-wrap .voice-img .voice-text h4{font-size: 20px;}
 
 
 
     /* Partners section css */
     #partners-section .section-title{margin: 0 20px; padding-top: 16px;}
     #partners-section .section-title span{font-size: 24px;}
-    #partners-section .section-title p{font-size: 14px; padding-top: 20px;}
-    #partners-section .partners-logo{padding: 120px 0 300px;}
-    #partners-section .partners-logo img{height: 140px;}
+    #partners-section .section-title p{font-size: 14px;}
+    #partners-section .partners-logo{padding: 120px 0 250px;}
+    #partners-section .partners-logo img{height: 73px;}
 
 
 
@@ -111,13 +257,13 @@
     /* Footer section */
     footer{height: 100%;}
     footer h3{font-size: 60px; padding: 0 20px 80px;}
-    footer .footer-section{flex-direction: column;}
-    footer .footer-section .contact-section{ width: 100%; padding: 0 0 120px ; row-gap: 20px;}
+    footer .footer-section{row-gap: 120px;}
+    footer .footer-section .contact-section{ width: 100%; row-gap: 20px; padding-left: 0;}
     footer .footer-section .contact-section h5{font-size: 16px;}
     footer form{row-gap: 20px; font-size: 14px;}
     footer form .form-align{column-gap: 20px;}
     footer form .send-btn button{width: 100%;}
-    footer .company-info{padding-left: 0; row-gap: 40px;}
+    footer .company-info{padding-left: 0; row-gap: 40px; width: 100%;}
     footer .company-info span{font-size: 17px;}
     footer .company-info p{font-size: 14px; padding-top: 12px;}
     footer .sns-wrap{padding: 80px 20px 20px; justify-content: space-between; font-size: 17px;}
@@ -131,3 +277,103 @@
 
 
 }
+
+
+@media screen and (max-width: 580px) {
+
+    /* header style */
+    #header.active .hamburger span{background-color: #191919;}
+    #header .hamburger { display: flex; }
+    #header .hamburger.open span{background-color: #191919;}
+    #header nav{ display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; z-index: 10; padding: 1.5rem 0; _transition:all .3s;}
+    #header nav.active { display: flex;  background-color: #fff;}
+    #header nav ul { flex-direction: column; align-items: end; row-gap: 1.5rem; width: 100%; padding-right: 16px;}
+    #header.active nav ul li { color: #191919; padding: 4px 8px;}
+
+
+
+    /* Hero section CSS */
+    #main-section{height: 580px;}
+    #main-section .landing-text-box{padding: 0 20px 20px;}
+    #main-section .landing-text-box .video-text p{font-size: 12px;}
+    #main-section .landing-text-box .video-text span{font-size: 16px;}
+    #main-section .video-title .ring{width: 16px; height: 17px;}
+
+
+
+    /* Meet section CSS */
+    #meet-section .meet-section-top span{font-size: 20px;}
+    #meet-section img{width: 328px;}
+    #meet-section .meet-section-bottom p{font-size: 12px;}
+
+
+    /* Art section CSS */
+    #art-section .section-title span{font-size: 20px;}
+    #art-section .section-title a p{font-size: 12px;}
+    #art-section .art-main-wrap{margin: 16px 0; max-height: 400px;}
+    #art-section .art-title span{font-size: 40px; margin-bottom: 10px;}
+    #art-section .art-title p{font-size: 12px;}
+
+
+
+    /* video css */
+    .video-wrap{padding: 16px 0;}
+    .video-wrap .video-text .video-title span{font-size: 16px;}
+    .video-wrap .video-text .video-title p{font-size: 12px;}
+
+
+
+    /* Mind section CSS */
+    #mind-section .mind-section-top span{font-size: 20px;}
+    #mind-section .mind-section-bottom p{font-size: 12px;}
+    #mind-section video{width: 320px;}
+
+
+    /* Environment section CSS */
+    #environment-section .section-title span{font-size: 20px;}
+    #environment-section .section-title a p{font-size: 12px;}
+    #environment-section .art-main-wrap{margin: 16px 0; max-height: 400px;}
+    #environment-section .art-title span{font-size: 40px; margin-bottom: 10px;}
+    #environment-section .art-title p{font-size: 12px;}
+
+
+    /* voice section CSS */
+    #voice-section{padding: 120px 0;}
+    #voice-section .voice-section-top span{font-size: 20px;}
+    #voice-section .voice-section-bottom p{font-size: 12px;}
+    #voice-section .voice-img-wrap{flex-direction: column; padding: 20px 0 0; align-items: center;}
+    #voice-section .voice-img-wrap .voice-img{width: 360px;}
+    #voice-section .voice-img-wrap .voice-line{display: none;}
+
+
+
+
+    /* Partners section css */
+    #partners-section .section-title span{font-size: 20px;}
+    #partners-section .section-title p{font-size: 12px;}
+    #partners-section .partners-logo{padding: 100px 0 200px;}
+
+
+
+    /* Ongoing section css */
+    #ongoing-section{padding-bottom: 120px;}
+    #ongoing-section .section-title span{font-size: 20px;}
+    #ongoing-section .ongoing-project-box{margin-top: 60px;}
+    #ongoing-section .ongoing-project-box .ongoing-box h4{font-size: 17px;}
+    #ongoing-section .ongoing-project-box .ongoing-box p{font-size: 14px;}
+
+
+
+    /* Footer section */
+    footer h3{font-size: 40px; padding-top: 30px;}
+    footer form .form-align{flex-direction: column; row-gap: 20px;}
+    footer form .form-align .input-box{width: 100%;}
+    footer .company-info span{font-size: 15px;}
+    footer .company-info p{font-size: 12px;}
+    footer .sns-wrap{font-size: 15px;}
+    footer .sns-wrap .sns{padding-right: 0; column-gap: 20px;}
+    footer .footer-section{row-gap: 80px;}
+    footer .sns-wrap .sns span{display: none;}
+    footer .sns-wrap i{padding-right: 0; font-size: 24px;}
+}
+
