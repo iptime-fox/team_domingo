@@ -210,7 +210,7 @@ footer .footer-section .contact-section h5{font-size: 20px; font-weight: 200;}
 footer form{display: flex; flex-direction: column; row-gap: 40px;}
 footer form .form-align{display: flex; column-gap: 40px;}
 footer form .form-align .input-box{width: 400px; display: flex; flex-direction: column;}
-footer form input{background-color: transparent; padding: 16px 0;border: none; border-bottom: 1px solid #808080; color: #808080; outline: none;}
+footer form input{background-color: transparent; padding: 16px 0;border: none; border-bottom: 1px solid #808080; color: #fbfbfb; outline: none;}
 footer form .message-box{width: 100%; display: flex; flex-direction: column; row-gap: 24px;}
 footer form .message-box #message{outline: none; width: 100%; border: 1px solid #808080; height: 144px; background-color: transparent; color: #fbfbfb; padding: 12px;resize: none;}
 footer form .send-btn{width: 100%; display: flex; justify-content: end;}
