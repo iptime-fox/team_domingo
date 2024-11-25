@@ -25,11 +25,14 @@ cateBoxes.forEach((box) => {
 
 
 
+
 const icons = document.querySelectorAll('.list-style i');
 const videoWrap = document.querySelectorAll('.video-wrap');
 
 const initialIconsState = Array.from(icons).map(icon => icon.outerHTML);
-const parent = icons[0].parentElement; 
+const parent = icons[0].parentElement;
+
+let isGridViewActive = false; 
 
 function setIconListeners() {
     const updatedIcons = document.querySelectorAll('.list-style i');
@@ -39,8 +42,10 @@ function setIconListeners() {
             icon.classList.add('active');
 
             if (icon.classList.contains('ri-layout-grid-fill')) {
+                isGridViewActive = true; 
                 videoWrap.forEach((vw) => vw.classList.add('grid-view'));
             } else {
+                isGridViewActive = false; 
                 videoWrap.forEach((vw) => vw.classList.remove('grid-view'));
             }
         });
@@ -54,9 +59,20 @@ function handleResize() {
     } else {
         parent.innerHTML = initialIconsState.join('');
         setIconListeners();
+
+        const updatedIcons = document.querySelectorAll('.list-style i');
+        updatedIcons.forEach((i) => i.classList.remove('active')); 
+
+        if (isGridViewActive) {
+            const gridIcon = document.querySelector('.ri-layout-grid-fill');
+            gridIcon.classList.add('active'); 
+            videoWrap.forEach((vw) => vw.classList.add('grid-view'));
+        } else {
+            const menuIcon = document.querySelector('.ri-menu-line');
+            menuIcon.classList.add('active');
+        }
     }
 }
-
 
 window.addEventListener('resize', handleResize);
 handleResize();

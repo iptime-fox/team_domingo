@@ -5,7 +5,7 @@ ol, ul{list-style:none;}
 a{text-decoration: none; color: inherit;}
 img{display:block;}
 em, strong, i, b{font-style:normal; font-weight: normal;}
-a{cursor: pointer;}
+i, a{cursor: pointer;}
 input:-internal-autofill-selected {
     appearance: none;
     background-color: transparent !important;

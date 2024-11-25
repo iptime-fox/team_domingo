@@ -11,9 +11,10 @@
     #meet-section .meet-section-top span{font-size: 32px;}
     #meet-section .meet-section-bottom p{font-size: 20px;}
 
+    #meet-section img{width: 728px;}
     #main-section .video-desc{row-gap: 24px;}
     #main-section .video-desc .video-title-wrap{row-gap: 3px;}
-    #main-section .video-desc .video-title .video-name .art-name{width: 184;}
+    #main-section .video-desc .video-title .video-name .art-name{width: 184px;}
 
 
     /* Art section CSS */
@@ -48,35 +49,37 @@
     /* voice section CSS */
     #voice-section .voice-section-top span{font-size: 32px;}
     #voice-section .voice-section-bottom p{font-size: 16px;}
-    #voice-section .voice-img-wrap{padding: 40px 0 0 ; display: flex; justify-content: center;}
+    #voice-section .voice-img-wrap{padding: 60px 0 0 ; display: flex; justify-content: center;}
     #voice-section .voice-img-wrap .voice-img{width: 45%;}
     #voice-section .voice-img-wrap img{width: 100%;}
     #voice-section .voice-img-wrap .voice-line{height: auto; }
 
     #voice-section .voice-img-wrap .voice-img .voice-text h4{font-size: 24px;}
-    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 14px;}
-    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 16px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 12px;}
+    #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 14px; padding: 20px 0;}
 
 
 
     /* Partners section css */
     #partners-section .section-title{padding-top: 20px;}
     #partners-section .section-title span{font-size: 32px;}
-    #partners-section .section-title p{font-size: 16px; padding-top: 20px;}
+    #partners-section .section-title p{font-size: 20px; }
 
 
     /* Ongoing section css */
+    #ongoing-section .section-title span{font-size: 32px;} 
     #ongoing-section .section-title{ padding-top: 20px;}
     #ongoing-section .ongoing-project-box .ongoing-box img{padding-bottom: 12px;}
     #ongoing-section .ongoing-project-box .ongoing-box h4{font-size: 28px;}
     #ongoing-section .ongoing-project-box .ongoing-box{row-gap: 28px;}
+    #ongoing-section .ongoing-project-box .ongoing-box span{font-size: 14px;}
 
     
     /* Footer section */
     footer{height: 100%;}
-    footer h3{font-size: 120px;  padding: 40px 2.5rem ;}
+    footer h3{padding: 40px 2.5rem ;}
     footer .footer-section{flex-direction: column; row-gap: 200px; align-items: end;}
-    footer .company-info{width: 65%;  padding-left: 100px; }
+    footer .company-info{width: 65%;  padding-left: 0; }
     footer .footer-section .contact-section{max-width: none; width: 65%;}
     footer .sns-wrap{padding: 140px 40px 40px 0;}
     footer .sns-wrap .sns{width: 45%;}
@@ -130,13 +133,15 @@
 
 
     /* Environment section CSS */
-    #environment-section .art-title span{font-size: 80px; }
+    #environment-section .art-title {padding-bottom: 40px;}
+    #environment-section .art-title span{font-size: 80px; margin-bottom: 20px;}
     #environment-section .art-title p{font-size: 20px;}
 
     
     
     /* voice section CSS */
     #voice-section{padding: 160px 0;}
+    #voice-section .voice-section-top{padding-bottom: 20px;}
     #voice-section .voice-section-top span{font-size: 24px;}
     #voice-section .voice-img-wrap .voice-img .voice-text span{font-size: 14px; padding: 20px 0;}
     #voice-section .voice-img-wrap .voice-img .voice-text p{font-size: 12px;}
@@ -197,7 +202,7 @@
 
 
     /* video css */
-    .video-wrap{flex-direction: column;}
+    .video-wrap{flex-direction: column; padding: 20px 0;}
     .video-wrap .video-box{width: 100%; aspect-ratio: 16 / 9; height: auto;  overflow: hidden; display: flex; justify-content: center; align-items: center;}
     .video-wrap .video-box video { width: 100%; height: 100%; object-fit: cover; transition: none; } 
     .video-wrap .video-text{width: 100%; row-gap: 80px;}
@@ -230,9 +235,8 @@
 
     /* voice section CSS */
     #voice-section{padding: 160px 20px;}
-    #voice-section .voice-section-top{padding-bottom: 16px;}
+    #voice-section .voice-section-top{padding-bottom: 12px;}
     #voice-section .voice-section-top span{font-size: 24px;}
-    #voice-section .voice-img-wrap .voice-img{width: 50%;}
     #voice-section .voice-img-wrap img{width: 100%;}
     #voice-section .voice-img-wrap .voice-line{margin: 0 16px;}
     
@@ -245,14 +249,14 @@
     /* Partners section css */
     #partners-section .section-title{margin: 0 20px; padding-top: 16px;}
     #partners-section .section-title span{font-size: 24px;}
-    #partners-section .section-title p{font-size: 14px;}
+    #partners-section .section-title p{font-size: 16px;}
     #partners-section .partners-logo{padding: 120px 0 250px;}
     #partners-section .partners-logo img{height: 73px;}
 
 
 
     /* Ongoing section css */
-
+    #ongoing-section .ongoing-project-box{margin-top: 60px;}
     #ongoing-section .section-title{margin: 0 20px; padding-top: 16px;}
     #ongoing-section .section-title span{font-size: 24px;}
 
@@ -260,7 +264,7 @@
 
     /* Footer section */
     footer{height: 100%;}
-    footer h3{font-size: 60px; padding: 0 20px 80px;}
+    footer h3{font-size: 60px; padding: 40px 20px 80px;}
     footer .footer-section{row-gap: 120px;}
     footer .footer-section .contact-section{ width: 100%; row-gap: 20px; padding-left: 0;}
     footer .footer-section .contact-section h5{font-size: 16px;}
@@ -271,7 +275,7 @@
     footer .company-info span{font-size: 17px;}
     footer .company-info p{font-size: 14px; padding-top: 12px;}
     footer .sns-wrap{padding: 80px 20px 20px; justify-content: space-between; font-size: 17px;}
-
+    footer .sns-wrap .sns {margin-right: 0;}
 
 
 
@@ -301,7 +305,7 @@
     #main-section .landing-text-box{padding: 0 20px 20px;}
     #main-section .landing-text-box .video-text p{font-size: 12px;}
     #main-section .landing-text-box .video-text span{font-size: 16px;}
-    #main-section .video-title .ring{width: 16px; height: 17px;}
+    #main-section .video-title .ring{width: 16px; height: 17px; bottom: 20px;}
 
 
 
