@@ -256,6 +256,7 @@
 
 
     /* Ongoing section css */
+    #ongoing-section .section-title dotlottie-player{width: 20px; height: 12px;}
     #ongoing-section .ongoing-project-box{margin-top: 60px;}
     #ongoing-section .section-title{margin: 0 20px; padding-top: 16px;}
     #ongoing-section .section-title span{font-size: 24px;}
