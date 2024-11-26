@@ -277,7 +277,7 @@
     footer .company-info p{font-size: 14px; padding-top: 12px;}
     footer .sns-wrap{padding: 80px 20px 20px; justify-content: space-between; font-size: 17px;}
     footer .sns-wrap .sns {margin-right: 0;}
-
+    footer form .message-box{row-gap: 12px;}
 
 
 
@@ -386,5 +386,6 @@
     footer .footer-section{row-gap: 80px;}
     footer .sns-wrap .sns span{display: none;}
     footer .sns-wrap i{padding-right: 0; font-size: 24px;}
+    
 }
 
