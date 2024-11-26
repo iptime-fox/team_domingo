@@ -158,7 +158,7 @@ header nav ul li:hover{background-color: #FF00FF; }
 
 
 /* Partners section css */
-#partners-section{width: 100%;}
+#partners-section{width: 100%; overflow-x: hidden;}
 #partners-section .section-title{ border-top: 1px solid #808080; padding-top: 20px; margin: 0 2.75rem;}
 #partners-section .section-title span{font-size: 40px;}
 #partners-section .section-title p{font-size: 24px; color: #4D4D4D; padding-top: 20px;}
@@ -184,7 +184,7 @@ header nav ul li:hover{background-color: #FF00FF; }
 
 
 /* Ongoing section css */
-#ongoing-section{width: 100%; height: 100%; padding-bottom: 200px;}
+#ongoing-section{width: 100%; height: 100%; padding-bottom: 200px; overflow-x: hidden;}
 #ongoing-section .section-title{ display: flex; column-gap: 8px; align-items: center; border-top: 1px solid #808080; padding-top: 20px; margin: 0 2.75rem;}
 #ongoing-section .section-title span{font-size: 40px;}
 #ongoing-section .ongoing-project-box{display: flex; justify-content: space-around; margin-top: 160px;}
