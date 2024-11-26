@@ -185,7 +185,7 @@ header nav ul li:hover{background-color: #FF00FF; }
 
 /* Ongoing section css */
 #ongoing-section{width: 100%; height: 100%; padding-bottom: 200px;}
-#ongoing-section .section-title{ border-top: 1px solid #808080; padding-top: 20px; margin: 0 2.75rem;}
+#ongoing-section .section-title{ display: flex; column-gap: 8px; align-items: center; border-top: 1px solid #808080; padding-top: 20px; margin: 0 2.75rem;}
 #ongoing-section .section-title span{font-size: 40px;}
 #ongoing-section .ongoing-project-box{display: flex; justify-content: space-around; margin-top: 160px;}
 #ongoing-section .ongoing-project-box .ongoing-box{display: flex; flex-direction: column; align-items: center; row-gap: 40px;}
