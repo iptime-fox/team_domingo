@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         .send('service_vkcg0qq', 'template_ersxl49', formData)
         .then(function (response) {
           alert('이메일이 성공적으로 전송되었습니다!');
+          location.href = './index.html';
         })
         .catch(function (error) {
           console.error('이메일 전송 실패:', error);
