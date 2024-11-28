@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
       emailjs
         .send('service_vkcg0qq', 'template_ersxl49', formData)
         .then(function (response) {
-          alert('메시지가 성공적으로 전송되었습니다. 감사합니다.');
+          alert('문의가 성공적으로 접수되었습니다. 감사합니다.');
           location.href = './index.html';
         })
         .catch(function (error) {
           console.error('이메일 전송 실패:', error);
           alert(
-            '죄송합니다, 메시지를 보내지 못했습니다. 잠시 후 다시 시도해 주세요.'
+            '죄송합니다, 문의 접수가 실패했습니다. 잠시 후 다시 시도해 주세요.'
           );
         });
     });
