@@ -66,26 +66,37 @@ videoWraps.forEach((videoWrap) => {
 
   // 데스크톱: 마우스 호버 이벤트
   videoWrap.addEventListener('mouseenter', () => {
-    video.play();
+    if (!isMobile()) {
+      video.play();
+    }
   });
 
   videoWrap.addEventListener('mouseleave', () => {
-    video.pause();
-    video.currentTime = 0;
-    video.load();
-  });
-
-  // 모바일: 터치 이벤트 추가
-  videoWrap.addEventListener('click', () => {
-    if (video.paused) {
-      video.play();
-    } else {
+    if (!isMobile()) {
       video.pause();
       video.currentTime = 0;
       video.load();
     }
   });
+
+  // 모바일: 터치 이벤트 추가
+  videoWrap.addEventListener('click', () => {
+    if (isMobile()) {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+        video.currentTime = 0;
+        video.load();
+      }
+    }
+  });
 });
+
+// 모바일 환경 감지 함수
+function isMobile() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
 
 // main hero src, title 변경 및 자동 전환 기능
 
