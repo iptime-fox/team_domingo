@@ -38,36 +38,38 @@ header nav ul li:hover{background-color: #FF00FF; }
 
 
 /* Hero section CSS */
-#main-section{width: 100%; height: 100vh; max-height: 100vh; position:relative; overflow: hidden;}
-#main-section .main-section-wrap{width: 100%; height: 100%;}
-#main-section .landing-text-box{width: 100%; position: relative; height: 100%; display: flex; align-items: end; padding-bottom: 60px; justify-content: space-between;}
-#main-section .main-section-wrap .main-video{width: 100%; height: 100%; position:absolute; left:0; top:0; display: block; margin: 0 auto; object-fit: cover;}
-
-#main-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 30%; background: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgba(0, 0, 0, 0)); z-index: 2; pointer-events: none; }
-
-.main-video {opacity: 1;transition: opacity 0.5s ease;}
-#main-section .landing-text-box .video-text p{font-size: 20px; color: #DADADA; padding-bottom: 20px;}
-#main-section .landing-text-box .video-text span{font-size: 32px; color: #DADADA; line-height: normal;}
-#main-section .landing-text-box .video-text span.span-bold{color: #fbfbfb; line-height: 1.5;}
-
-#main-section .video-desc{width: fit-content; display: flex; flex-direction: column; row-gap: 28px;}
-#main-section .video-desc .video-title-wrap{width: 100%; display: flex; flex-direction: column; row-gap: 5px;}
-#main-section .video-desc .video-title{cursor: pointer; box-sizing: content-box; display: flex; width: 100%; column-gap: 10px; color: #DADADA;}
-#main-section .video-desc .video-title:hover{color: #FF00FF; transition:all .3s;}
 
 
-#main-section .video-desc .video-title .ring{ display: flex; align-items: center;}
-#main-section .video-desc .video-title .ring lottie-player{width: 14px; height: 14px; visibility: hidden; opacity: 0;}
-#main-section .video-desc .ring.active lottie-player{visibility: visible; opacity: 1;}
-#main-section .video-desc .video-title .span{margin-left: 16px;}
-#main-section .video-desc .story{padding-left: 22px; color: #fbfbfb; font-size: 14px;}
+
+#main-section { width: 100%; height: 100vh; max-height: 100vh; position: relative; overflow: hidden; } 
+#main-section .main-section-wrap { width: 100%; height: 100%; } 
+#main-section .landing-text-box { width: 100%; position: absolute; bottom: 60px; display: flex; align-items: flex-end; justify-content: space-between; padding: 0 20px; z-index: 3; } 
+
+#main-section .main-section-wrap .main-video { width: 145%; height: 100%; position: absolute; left: 50%;top: 0; display: block; margin: 0 auto; object-fit: cover;  transform: translateX(-50%) scale(1.10); pointer-events: none; } 
+#main-section::before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 30%; background: linear-gradient(to bottom, rgba(110, 110, 110, 0.5), rgba(0, 0, 0, 0)); z-index: 2; pointer-events: none; } 
+.main-video { opacity: 1; transition: opacity 0.5s ease; } 
+
+#main-section .landing-text-box .video-text p { font-size: 20px; color: #DADADA; padding-bottom: 20px; } 
+#main-section .landing-text-box .video-text span { font-size: 32px; color: #DADADA; line-height: normal; } 
+#main-section .landing-text-box .video-text span.span-bold { color: #fbfbfb; line-height: 1.5; } 
+
+#main-section .video-desc { width: fit-content; display: flex; flex-direction: column; row-gap: 28px; } 
+#main-section .video-desc .video-title-wrap { width: 100%; display: flex; flex-direction: column; row-gap: 5px; } 
+#main-section .video-desc .video-title { cursor: pointer; box-sizing: content-box; display: flex; width: 100%; column-gap: 10px; color: #DADADA;  pointer-events: auto; } 
+#main-section .video-desc .video-title:hover { color: #FF00FF; transition: all 0.3s; } 
+#main-section .video-desc .video-title .ring { display: flex; align-items: center; } 
+#main-section .video-desc .video-title .ring lottie-player { width: 14px; height: 14px; visibility: hidden; opacity: 0; } 
+#main-section .video-desc .ring.active lottie-player { visibility: visible; opacity: 1; } 
+#main-section .video-desc .video-title .span { margin-left: 16px; } 
+#main-section .video-desc .story { padding-left: 22px; color: #fbfbfb; font-size: 14px; } 
+#main-section .video-desc .video-title .video-name { width: 100%; display: flex; } 
+#main-section .video-desc .video-title .video-name .art-name { width: 188px; } 
+#main-section .video-desc .video-title .video-name span { font-size: 14px; } 
+
+.video-title .ring.active + .video-name { color: #fbfbfb; }
 
 
-#main-section .video-desc .video-title .video-name{width: 100%; display: flex;}
-#main-section .video-desc .video-title .video-name .art-name{width: 188px;}
-#main-section .video-desc .video-title .video-name span{font-size: 14px;}
 
-.video-title .ring.active + .video-name {color: #fbfbfb; }
 
 
 
@@ -102,14 +104,22 @@ header nav ul li:hover{background-color: #FF00FF; }
 /* video css */
 .video-wrap { width: 100%; display: flex; padding: 40px 0; border-top: 1px solid #808080; column-gap: 40px; } 
 .video-wrap.last { border-bottom: 1px solid #808080; } 
-.video-wrap .video-box { width: 753px; position: relative; } 
-.video-wrap .video-box video { width: 100%; height: 100%; object-fit: cover; } 
+
+
+.video-wrap .video-box { width: 40%; height: auto; position: relative; overflow: hidden; aspect-ratio: 16 / 9; }
+.video-wrap .video-box iframe { width: 160%; height: 150%; object-fit: cover; position: absolute; top: -20%; left: -30%; pointer-events: none; display: none;}
+.video-wrap .video-box .thumbnail { width: 100%; height: 100%;  object-fit: cover; display: block; cursor: pointer; position: absolute; top: 0; left: 0; z-index: 1; transition: opacity 0.3s ease; }
+.video-wrap .video-box:hover .thumbnail {  opacity: 0; }
+.video-wrap .video-box:hover iframe {display: block; }
+
+
 .video-wrap .video-text { width: 60%; display: flex; justify-content: space-between;  flex-direction: column;} 
 .video-wrap .video-text .video-title span { font-size: 32px; } 
 .video-wrap .video-text .video-title p { font-size: 24px; padding-top: 12px; color: #4D4D4D; } 
 .video-wrap .video-text .video-cate { width: 100%; display: flex; column-gap: 5px; color: #4D4D4D; justify-content: end; } 
 .video-wrap:hover .play-overlay { opacity: 1; } 
 .play-overlay { position: absolute; bottom: 20px; right: 20px; background-color: #191919; color: #fbfbfb; padding: 2px 8px; border-radius: 5px; opacity: 0; transition: opacity 0.3s ease;  z-index: 10; pointer-events: none; transition: all 0.3s;}
+
 
 
 

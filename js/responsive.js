@@ -1,22 +1,22 @@
 // Art main img src 변경
 
 function changeImageSrc() {
-    const imgs = document.getElementsByClassName('art-main-img'); // HTMLCollection 반환
+    const imgs = document.getElementsByClassName('art-main-img'); 
 
 
     for (var i = 0; i < imgs.length; i++) {
-        var currentSrc = imgs[i].src; // 현재 src 가져오기
+        var currentSrc = imgs[i].src; 
 
         if (window.innerWidth <= 900) {
-            // "-2"가 없는 경우에만 추가
+            
             if (!currentSrc.includes('-2')) {
-                imgs[i].src = currentSrc.replace(/(\.\w+)$/, '-2$1'); // 파일 확장자 앞에 "-2" 추가
+                imgs[i].src = currentSrc.replace(/(\.\w+)$/, '-2$1'); 
             }
 
         } else {
-            // "-2"가 있는 경우에만 원래대로 복구
+            
             if (currentSrc.includes('-2')) {
-                imgs[i].src = currentSrc.replace(/-2(\.\w+)$/, '$1'); // "-2"를 제거
+                imgs[i].src = currentSrc.replace(/-2(\.\w+)$/, '$1'); 
             }
 
 
@@ -35,7 +35,7 @@ const environmentText = document.getElementsByClassName('environment-res');
 const partnersText = document.getElementsByClassName('partners-res');
 
 function addBreak() {
-    if (window.innerWidth <= 900) { // 원하는 브레이크포인트 설정
+    if (window.innerWidth <= 900) { 
         Array.from(artText).forEach(element => {
             element.innerHTML = `
             뛰어난 감각과 메타포에 대한 이해를 경험으로 녹여내어<br>문화예술 작품의 강점을 극대화시킨 영상을 만듭니다.

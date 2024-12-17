@@ -35,7 +35,7 @@
 <body>
     <div class="wrapper">
         <!-- Header -->
-        <header id="header">
+        <header id="header" >
             <div class="container"> 
                 <div class="logo">
                     <a href="./index.html"><img src="./images/logo.png" alt="logo"></a>
@@ -59,7 +59,21 @@
         <!-- Hero section -->
         <section id="main-section" class="section">
             <div class="main-section-wrap">
-                <video autoplay loop muted playsinline class="main-video" src="./images/hero.mp4" ></video>
+                
+
+                <iframe 
+                    id="main-video"
+                    src="https://www.youtube.com/embed/KU1ajjJLJm4?start=3&autoplay=1&mute=1&controls=0&vq=hd1080"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    class="main-video">
+                </iframe>
+            
+            
+           
+
                 <div class="landing-text-box container">
                     <div class="video-text">
                         <p>영상을 통해 문화 예술 경험의 깊이를 더하다.</p>
@@ -70,7 +84,7 @@
                     <div class="video-desc">
                         <span class="story">Latest Story</span>
                         <div class="video-title-wrap">
-                            <div class="video-title" data-video="./images/hero.mp4" 
+                            <div class="video-title" data-video="https://www.youtube.com/embed/KU1ajjJLJm4?start=3&autoplay=1&mute=1&controls=0&vq=hd1080" 
                                 data-text=' <p>영상을 통해 문화 예술 경험의 깊이를 더하다.</p>
                                 <span>ENRICHING </span>
                                 <span class="span-bold">CULTURAL AND ARTISTIC EXPERIENCES</span><br>
@@ -84,7 +98,7 @@
 
                                 </div>
                             </div>
-                            <div class="video-title" data-video="./images/1.mp4"  
+                            <div class="video-title" data-video="https://www.youtube.com/embed/qOD09Hb7ExU?si=xLaJgP3c7SxsxZpr&amp;start=0&autoplay=1&mute=1&controls=0&vq=hd1080"  
                                 data-text=' <p>이응노 미술관</p>
                                 <span class="span-bold">이응노의 작품 재구성</span><br>
                                 <span>군상, 구성, 동방견문록</span>'>
@@ -97,7 +111,7 @@
 
                                 </div>
                             </div>
-                            <div class="video-title" data-video="./images/2.mp4"
+                            <div class="video-title" data-video="https://www.youtube.com/embed/5z3nDhRAa_c?si=x8_cKUnqfrLoD8f5&amp;start=0&autoplay=1&mute=1&controls=0&vq=hd1080"
                                 data-text=' <p>MMCA 국립현대미술관 과천</p>
                                 <span class="span-bold">PAIK NAMJUNE EFFECT</span><br>
                                 <span>백남준 컬렉션 특별전</span>'>
@@ -110,7 +124,7 @@
 
                                 </div>
                             </div>
-                            <div class="video-title" data-video="./images/8.mp4"
+                            <div class="video-title" data-video="https://www.youtube.com/embed/WXSkEn3Hz04?si=IZ7SCPdpZL29dZg7&amp;start=83&autoplay=1&mute=1&controls=0&vq=hd1080"
                                 data-text=' <p>Sea Shepherd Korea</p>
                                 <span class="span-bold">고스트넷, 바다의 그물을 건져 올리다.</span><br>
                                 <span>다큐멘터리</span>'>
@@ -123,7 +137,7 @@
 
                                 </div>
                             </div>
-                            <div class="video-title" data-video="./images/4.mp4"
+                            <div class="video-title" data-video="https://www.youtube.com/embed/T6u1QHuAdEw?si=hQox-x3jA9hEyZXL&amp;start=0&autoplay=1&mute=1&controls=0&vq=hd1080"
                                 data-text=' <p>MMCA 국립현대미술관 서울</p>
                                 <span class="span-bold">작은 방주</span><br>
                                 <span>최우람 개인전</span>'>
@@ -177,9 +191,20 @@
             <div class="art-video-wrap container">
                 <div class="video-wrap">
                     <div class="video-box">
-                        <video muted  playsinline poster="./images/art-video-1.png" alt="" class="hover-video">
-                            <source src="./images/1.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/qOD09Hb7ExU/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/qOD09Hb7ExU?si=xLaJgP3c7SxsxZpr&amp;start=0&mute=1&controls=0&loop=1&playlist=qOD09Hb7ExU&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">
@@ -193,12 +218,24 @@
                         </div>
                     </div>
                 </div>
+
                 
                 <div class="video-wrap">
                     <div class="video-box">
-                        <video muted playsinline poster="./images/art-video-2.png" alt="" class="hover-video">
-                            <source src="./images/2.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/5z3nDhRAa_c/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/5z3nDhRAa_c?si=x8_cKUnqfrLoD8f5&amp;start=0&autoplay=1&mute=1&controls=0&loop=1&playlist=5z3nDhRAa_c&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">
@@ -212,11 +249,23 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="video-wrap last">
                     <div class="video-box">
-                        <video muted  playsinline poster="./images/art-video-3.png" alt="" class="hover-video">
-                            <source src="./images/3.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/1HCXKuvoEfo/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/1HCXKuvoEfo?si=ibEtw1KBqztDdWjH&amp;start=0&mute=1&controls=0&loop=1&playlist=1HCXKuvoEfo&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">
@@ -270,9 +319,20 @@
             <div class="environment-video-wrap container">
                 <div class="video-wrap">
                     <div class="video-box">
-                        <video muted playsinline poster="./images/work-8.png" alt="" class="hover-video">
-                            <source src="./images/8.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/WXSkEn3Hz04/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/WXSkEn3Hz04?si=IZ7SCPdpZL29dZg7&amp;start=83&mute=1&controls=0&loop=1&playlist=WXSkEn3Hz04&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">
@@ -288,9 +348,20 @@
                 </div>
                 <div class="video-wrap">
                     <div class="video-box">
-                        <video muted playsinline poster="./images/work-6.png" alt="" class="hover-video">
-                            <source src="./images/6.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/WBtB2MccF8g/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/WBtB2MccF8g?si=2F8Z-9jwvYt-hEah&amp;start=0&mute=1&controls=0&loop=1&playlist=WBtB2MccF8g&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">
@@ -306,9 +377,20 @@
                 </div>
                 <div class="video-wrap last">
                     <div class="video-box">
-                        <video muted playsinline poster="./images/work-11.png" alt="" class="hover-video">
-                            <source src="./images/11.mp4">
-                        </video>
+                        <img 
+                            src="https://img.youtube.com/vi/TSuvkq9TwKk/maxresdefault.jpg" 
+                            alt="YouTube Thumbnail" 
+                            class="thumbnail"
+                        >
+                        <iframe 
+                            id="main-video"
+                            src="https://www.youtube.com/embed/TSuvkq9TwKk?si=qliH6aQbeC8SJ1fs&amp;start=0&mute=1&controls=0&loop=1&playlist=TSuvkq9TwKk&vq=hd1080"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; autoplay"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            class="main-video">
+                        </iframe>
                         <div class="play-overlay">PLAY</div>
                     </div>
                     <div class="video-text">

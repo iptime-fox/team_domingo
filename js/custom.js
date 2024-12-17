@@ -41,55 +41,62 @@ contact.addEventListener('click', function () {
   window.scroll(0, 20000);
 });
 
-// 비디오 호버시 play
 
-// const videoWraps = document.querySelectorAll('.video-wrap');
 
-// videoWraps.forEach((videoWrap) => {
-//   const video = videoWrap.querySelector('.hover-video');
 
-//   videoWrap.addEventListener('mouseenter', () => {
-//     video.play();
-//   });
 
-//   videoWrap.addEventListener('mouseleave', () => {
-//     video.pause();
-//     video.currentTime = 0; // 비디오를 처음으로 되돌림
-//     video.load(); // poster 이미지가 다시 보이도록 설정
-//   });
-// });
 
-const videoWraps = document.querySelectorAll('.video-wrap');
 
-videoWraps.forEach((videoWrap) => {
-  const video = videoWrap.querySelector('.hover-video');
+// 비디오 호버시 재생되는 이벤트
 
-  // 데스크톱: 마우스 호버 이벤트
+document.querySelectorAll('.video-wrap').forEach((videoWrap) => {
+  const iframe = videoWrap.querySelector('iframe');
+  const thumbnail = videoWrap.querySelector('.thumbnail');
+  const videoSrc = iframe.src;
+
+  // 호버 시작: 데스크톱에서 영상 재생
   videoWrap.addEventListener('mouseenter', () => {
-    if (!isMobile()) {
-      video.play();
-    }
-  });
+      if (!isMobile()) {
+         
+          thumbnail.style.opacity = '0';
+          thumbnail.style.pointerEvents = 'none';
 
-  videoWrap.addEventListener('mouseleave', () => {
-    if (!isMobile()) {
-      video.pause();
-      video.currentTime = 0;
-      video.load();
-    }
-  });
-
-  // 모바일: 터치 이벤트 추가
-  videoWrap.addEventListener('click', () => {
-    if (isMobile()) {
-      if (video.paused) {
-        video.play();
-      } else {
-        video.pause();
-        video.currentTime = 0;
-        video.load();
+      
+          iframe.src = videoSrc + '&autoplay=1';
+          iframe.style.display = 'block';
       }
-    }
+  });
+
+  // 호버 종료: 데스크톱에서 영상 정지
+  videoWrap.addEventListener('mouseleave', () => {
+      if (!isMobile()) {
+         
+          thumbnail.style.opacity = '1';
+          thumbnail.style.pointerEvents = 'auto';
+
+         
+          iframe.src = videoSrc.split('&autoplay=1')[0];
+          iframe.style.display = 'none';
+      }
+  });
+
+  // 모바일: 클릭 이벤트 처리
+  videoWrap.addEventListener('click', () => {
+      if (isMobile()) {
+          if (iframe.style.display === 'block') {
+       
+              thumbnail.style.opacity = '1';
+              thumbnail.style.pointerEvents = 'auto';
+              iframe.src = videoSrc.split('&autoplay=1')[0];
+              iframe.style.display = 'none';
+          } else {
+      
+              thumbnail.style.opacity = '0';
+              thumbnail.style.pointerEvents = 'none';
+              iframe.src = videoSrc + '&autoplay=1';
+              iframe.style.display = 'block';
+          }
+      }
   });
 });
 
@@ -98,7 +105,16 @@ function isMobile() {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
+
+
+
+
+
+
+
+
 // main hero src, title 변경 및 자동 전환 기능
+
 
 const videoTitles = document.querySelectorAll('#main-section .video-title');
 const mainVideo = document.querySelector('.main-video');
@@ -139,7 +155,7 @@ function switchVideo(index) {
   }, 500);
 }
 
-// 클릭 이벤트: 수동 변경
+// 기존 JavaScript 코드에서 비디오 클릭을 막고 제목만 클릭 가능하게 설정
 videoTitles.forEach((title, index) => {
   title.addEventListener('click', () => {
     currentIndex = index;
@@ -149,11 +165,19 @@ videoTitles.forEach((title, index) => {
   });
 });
 
+// 비디오 영역 클릭을 방지하기 위한 이벤트 리스너 추가
+mainVideo.addEventListener('click', (event) => {
+  event.preventDefault(); // 클릭 시 아무 동작도 일어나지 않도록
+});
+
+
+
 // 자동 전환 타이머 설정
 let autoSwitch = setInterval(() => {
   currentIndex = (currentIndex + 1) % videoTitles.length;
   switchVideo(currentIndex);
 }, switchInterval);
+
 
 // 타이머 리셋 함수
 function resetAutoSwitch() {
@@ -163,3 +187,4 @@ function resetAutoSwitch() {
     switchVideo(currentIndex);
   }, switchInterval);
 }
+

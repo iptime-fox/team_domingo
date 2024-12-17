@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // EmailJS 초기화
-  emailjs.init('21w3ctWrNVBWpoogm'); // EmailJS Public Key를 입력
 
-  // 폼 제출 이벤트 핸들러
+  emailjs.init('21w3ctWrNVBWpoogm'); 
+
+
   document
     .getElementById('contact-form')
     .addEventListener('submit', function (event) {
-      event.preventDefault(); // 폼 기본 동작 방지
+      event.preventDefault(); 
 
-      // 폼 데이터 가져오기
+
       const formData = {
         company: document.getElementById('company').value,
         name: document.getElementById('name').value,
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         message: document.getElementById('message').value,
       };
 
-      // EmailJS로 이메일 전송
       emailjs
         .send('service_vkcg0qq', 'template_ersxl49', formData)
         .then(function (response) {
