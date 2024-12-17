@@ -340,7 +340,7 @@
     .video-wrap .video-text .video-title span{font-size: 16px;}
     .video-wrap .video-text .video-title p{font-size: 12px;}
 
-
+    .video-wrap .video-box iframe { width: 200% ; height: 140%; top: -23%; left: -50%;}
 
     /* Mind section CSS */
     #mind-section{padding: 120px 20px;}

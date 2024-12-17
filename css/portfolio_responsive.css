@@ -15,7 +15,7 @@
     #work-main-section .work-main-wrap{padding: 180px 20px 80px;}
     #work-main-section .work-main-wrap .work-main-video .main-video-wrap{flex-direction: column;}
     #work-main-section .work-main-wrap .work-main-video .main-video-wrap .text{padding-right: 0;}
-    #work-main-section .work-main-wrap .work-main-video .iframe-wrap{width: 100%; margin: 20px 0;}
+    #work-main-section .work-main-wrap .work-main-video .iframe-wrap{width: 100%; margin: 16px 0;}
 
 
     #portfolio-section .cate-wrap .work-cate .cate-box{width: 100px; font-size: 14px;}
@@ -41,4 +41,9 @@
 
     .video-wrap .video-text .video-title p, .video-wrap .video-text .video-cate{display: none;}
     .video-wrap .video-text{row-gap: 0;}
+
+
+    
+
+    #work-main-section .work-main-wrap .work-main-video .iframe-wrap iframe{width: 140%; height: 160%; top: -30%;}
 }
